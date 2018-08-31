@@ -1,2 +1,2 @@
 # IS5006
-project
+This is a school project 
