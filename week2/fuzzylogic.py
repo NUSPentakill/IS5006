@@ -31,7 +31,11 @@ def range(start, stop, step=1.):
     return result
 
 
-# membership functions
+## @membership functions - This Function calcutate the profitability using fuzzy logic
+# @param a The profit floor value
+# @param b The profit ceiling value
+# @param x The actual profit value
+# return the profitable value (between 0 and 1)
 def up(a, b, x):
     a = float(a)
     b = float(b)
@@ -43,6 +47,11 @@ def up(a, b, x):
     return 1.0
 
 
+## @membership functions - This Function calcutate the non profitable
+# @param a The profit floor value
+# @param b The profit ceiling value
+# @param x The actual profit value
+# return the non profitable fuzzy value
 def down(a, b, x):
     return 1. - up(a, b, x)
 
@@ -131,11 +140,17 @@ def ffilter(predicate, items):
     )
 
 
+## @membership functions p1 - This Function return the company with profitablity
+# @param company The company profile
+# return company with profit (between 0 and 1)
 def p1(company):
     value = profitable(profit(company))
     return (company, fand(value, 1))
 
 
+## @membership functions p2 - This Function return the company with High profitablity
+# @param company The company profile
+# return company with profit (between 0 and 1)
 def p2(company):
     a = profitable(profit(company))
     b = high(sales(company))
@@ -269,7 +284,7 @@ def price_example(man_costs=13.25, comp_price=29.99):
 
 
 if __name__ == '__main__':
-    result1 = fl.ffilter(fl.p1, fl.companies)
+    result1 = fl.ffilter(fl.p2, fl.companies)
     pprint(result1)
     result2 = fl.ffilter(fl.p3, fl.companies)
     pprint(result2)
