@@ -1,0 +1,26 @@
+{
+  "_module": "oauth2client.client",
+  "scopes": [
+    "https://mail.google.com/"
+  ],
+  "token_expiry": "2018-09-07T13:52:59Z",
+  "id_token": null,
+  "user_agent": null,
+  "access_token": "ya29.GlsRBnhpfULdlYnStftmuVz5kqODwGD0xL7Xv4xkjyPGibgHYvSE7fFzOB51q83bYuAGocIPwSbjqk1G-Q_u60TVukepjcHIguE03M6eRhKUr2ckTNh2Va0ODp-1",
+  "token_uri": "https://www.googleapis.com/oauth2/v3/token",
+  "invalid": false,
+  "token_response": {
+    "access_token": "ya29.GlsRBnhpfULdlYnStftmuVz5kqODwGD0xL7Xv4xkjyPGibgHYvSE7fFzOB51q83bYuAGocIPwSbjqk1G-Q_u60TVukepjcHIguE03M6eRhKUr2ckTNh2Va0ODp-1",
+    "scope": "https://mail.google.com/",
+    "token_type": "Bearer",
+    "expires_in": 3600,
+    "refresh_token": "1/NpOPTJOy1JwWqUSYQjMbThGP38LZpCETeEnG93MSosk"
+  },
+  "client_id": "636134715371-keforveflpsg86ajkjkrstjar40rsn0m.apps.googleusercontent.com",
+  "token_info_uri": "https://www.googleapis.com/oauth2/v3/tokeninfo",
+  "client_secret": "BGUesKIcilXM7YjgjKwfHFI9",
+  "revoke_uri": "https://accounts.google.com/o/oauth2/revoke",
+  "_class": "OAuth2Credentials",
+  "refresh_token": "1/NpOPTJOy1JwWqUSYQjMbThGP38LZpCETeEnG93MSosk",
+  "id_token_jwt": null
+}
