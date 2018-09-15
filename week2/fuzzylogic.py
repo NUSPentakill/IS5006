@@ -34,7 +34,7 @@ def range(start, stop, step=1.):
 ## @membership functions - This Function calcutate the profitability using fuzzy logic
 # @param a The profit floor value
 # @param b The profit ceiling value
-# @param x The actual profit value
+# @param x The actual profit in dollars
 # return the profitable value (between 0 and 1)
 def up(a, b, x):
     a = float(a)
